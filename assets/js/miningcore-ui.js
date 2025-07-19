@@ -1,5 +1,5 @@
 // config
-var API = 'https://apool.lol/api/'; // API address
+var API = 'https://pool.phicoin.net/api/'; // API address
 var defaultPool = ''; // Default Pool ID
 
 var currentPool = defaultPool;

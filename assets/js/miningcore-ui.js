@@ -222,7 +222,7 @@ function loadDashboardData(walletAddress) {
 function loadDashboardWorkerList(walletAddress) {
     return $.ajax(API + 'pools/' + currentPool + '/miners/' + walletAddress + '/performance')
         .done(function (data) {
-            var workerList = '<thead><th>Name</th><th>Hash Rate</th><th>Share Rate</th></thead><tbody>';
+            var workerList = '<thead><tr><th>Name</th><th>Hash Rate</th><th>Share Rate</th></tr></thead><tbody>';
             if (data.length > 0) {
                 $.each(data[0].workers, function (index, value) {
                     workerList += '<tr>';
